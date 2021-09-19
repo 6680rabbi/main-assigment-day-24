@@ -1,0 +1,381 @@
+
+/* menu css */
+
+        .custom-menu {
+            margin-left: 180px;}
+
+
+.menu-item {
+	padding: 10px 19px !important;
+    position: relative;}
+
+
+ .menu-item {
+    position: relative;}
+
+
+.menu-item::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 15px;
+    width: 0;
+    height: 3px;
+    background-color: #007acc}
+
+.menu-item:hover::after{
+    width: 75%;
+    transition: .3s;}
+
+.menu-item.active::after{
+    width: 80%;}
+
+
+/* dropdawn menu */
+
+.custom-menu li{
+    position: relative;}
+
+
+
+.custom-menu li ul{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background-color: rgb(182, 170, 182);
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;}
+
+.custom-menu li:hover ul{
+    opacity: 1;
+    visibility: visible;}
+
+
+.custom-menu li ul li{
+    list-style: none; 
+
+}
+
+.custom-menu li ul li a{
+    text-decoration: none;}
+
+
+/* slider section */
+
+
+.slider-section{
+    background-color: #f6f9fc;
+    padding: 180px 0;
+    position: relative;
+    overflow: hidden;}
+
+
+.slider-text {
+
+	}
+
+.slider-text h1{
+    font-size: 50px;
+    font-family: 'Spartan', sans-serif;}
+
+
+.slider-text p{
+    margin-top: 25px;  }
+
+
+.slider-text a{
+    margin-top: 25px;  }
+
+
+
+
+.slider-img img {
+	position: absolute;
+	top: -143px;
+	right: -126px;
+	width: 800px;
+	height: 800px;
+	border-radius: 50%;}
+
+
+
+    /* service-section css */
+
+    .service-section{
+      padding: 90px 0; } 
+
+
+    .service-text h5{
+        color: #0dcaf0 !important;
+	font-size: 17px; }
+
+    .service-text h1{
+        font-size: 45px;
+        position: relative;
+        font-family: 'Spartan', sans-serif;  
+    }
+
+    .service-text{
+        padding-bottom: 45px; }
+
+
+    .service-text h1::after {
+        content: "";
+        position: absolute;
+        height: 4px;
+        width: 76px;
+        bottom: -9px;
+        left: 0;
+        background-color:#007acc;
+        margin-bottom: -5px;}
+
+
+    .service-text p{
+        color: rgb(190, 151, 190);
+        margin-top: 25px;}
+
+
+/* service item css */
+
+
+    .service-item{
+        background: #f6f9fc;
+        padding: 20px;
+        transition: .4s;}
+
+
+    .service-item:hover{
+        background-color: rgba(0, 0, 255, 0.76);
+        color: white;
+        transform: scale(1.1); }
+
+
+    .service-item:hover span{
+        background-color: white;
+        color:#007acc;}
+    
+
+
+
+
+    .service-item span{
+        width: 73px !important;
+        line-height: 70px;
+        background-color: #007acc;
+        font-size: 30px;
+        color: white;
+        display: block;
+        height: 73px;
+        text-align: center;
+        border-radius: 44px 44px 44px 0px;       
+        position: relative;}
+
+
+    .service-item span::after {
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 46px;
+        top: 85px;
+        left: 0;
+        background-color: #007acc;
+        transition: .4s;}
+
+
+    .service-item:hover span::after{
+        width: 56px;
+        background-color: white; }
+
+    
+
+    .service-item h4 {
+        margin-top: 14px;
+        padding-bottom: 23px;     
+        }
+
+
+    .service-item p{
+        margin-top: 20px;
+        padding-bottom: 23px;}
+
+
+
+/* video-section */
+
+.video-section{
+    background: url(./video-bg.jpg) no-repeat;
+    background-size: cover;
+    padding: 120px;
+    position: relative;
+    z-index: 2;
+  
+}
+.video-section::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    background-color:rgba(0, 0, 0, 0.897) 
+ }
+
+
+
+.video-text{
+    text-align: center;
+    padding: 50px 0; 
+}
+
+
+.video-text h4 {
+	font-size: 20px;
+	color: white;
+}
+
+
+.video-text h1 {
+	font-size: 38px;
+    padding: 13px 0;
+	color: white;
+	font-family: Spartan;
+    position: relative;
+    font-family: 'Spartan', sans-serif;
+}
+
+.video-text h1::after {
+	content: "";
+	position: absolute;
+	height: 3px;
+	width: 72px;
+	top: 48px;
+	left: 524px;
+	background-color: white;
+	margin: 18px 0px;
+}
+
+.video-text p{
+    color: white;
+    margin-top: 30px;
+}
+
+/* animitionn section */
+
+.animi{
+    text-align: center;
+    padding: 25px 0;
+}
+
+.animi span {
+	color: blue;
+	background-color: white;
+	padding: 20px 2opx;
+	height: 120px;
+	width: 120px;
+	line-height: 120px;
+	border-radius: 50%;
+	display: inline-block;
+	font-size: 40px;
+   
+    position: relative;
+   	
+}
+
+.animi span:hover{
+    background-color: blue;
+    color: white;
+}
+
+.animi span::after {
+    content:"";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    border: 2px solid white;
+    animation: rabbi2 2s ease-out infinite;
+    
+}
+.animi span::before {
+    content:"";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    border: 2px solid white;
+    animation: rabbi 2s ease-out infinite;
+    
+}
+
+
+
+@keyframes rabbi{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.2);
+        opacity: .7;
+    }
+    100%{
+        transform: scale(1.7);
+        opacity: 0;
+    }
+   
+}
+
+@keyframes rabbi2{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: .7;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+@keyframes play-animation{
+    0% { transform: scale(1);}
+    25% { transform: scale(1.2);}
+    50% { transform: scale(1);}
+    75% { transform: scale(1);}
+    100% { transform: scale(1);}
+
+} */
+
+/* @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  } */
+
+
+
